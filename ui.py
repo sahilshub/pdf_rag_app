@@ -51,6 +51,7 @@ div[data-testid="stChatInput"] button {
 
 st.title("📚 Retrieval Augmented Generator")
 
+
 def fetch_files():
     try:
         res = requests.get(API_FILES)
@@ -59,6 +60,7 @@ def fetch_files():
     except Exception:
         return []
     return []
+
 
 def refresh_files():
     st.session_state.file_options = fetch_files()
